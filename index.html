@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusPass - Ticket System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-brand">CampusPass</div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Add Person Form (Showpiece) -->
+        <div class="card">
+            <h2>Add Person</h2>
+            <form onsubmit="return false;">
+                <div class="form-group">
+                    <label for="personName">Person Name</label>
+                    <input type="text" id="personName" placeholder="Enter person name">
+                </div>
+                <button type="submit" class="btn">Add Person</button>
+            </form>
+        </div>
+
+        <!-- Search Bar (Showpiece) -->
+        <div class="card">
+            <div class="form-group" style="margin-bottom: 0;">
+                <input type="text" id="searchBox" placeholder="Search person name...">
+            </div>
+        </div>
+
+        <!-- Person List Table -->
+        <div class="card">
+            <h2>Entries List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Person Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rahul Sharma</td>
+                        <td><span class="badge active">Confirmed</span></td>
+                    </tr>
+                    <tr>
+                        <td>Priya Singh</td>
+                        <td><span class="badge pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>Amit Kumar</td>
+                        <td><span class="badge active">Confirmed</span></td>
+                    </tr>
+                    <tr>
+                        <td>Neha Verma</td>
+                        <td><span class="badge pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CampusPass. 1st Year B.Tech Project.</p>
+    </footer>
+
+</body>
+</html>
